@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.cataloglist.CatalogListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/catalog_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_of_the_day"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/app_color_on_primary"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toTopOf="@id/main"
+            app:layout_constraintStart_toStartOf="@id/main"/>
+
+        <ImageView
+            android:id="@+id/btn_list_to_grid"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_list"
+            app:layout_constraintTop_toTopOf="@id/catalog_header"
+            app:layout_constraintBottom_toBottomOf="@id/catalog_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/layout_catalog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:scrollY="0dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@id/main"
+            app:layout_constraintTop_toBottomOf="@id/catalog_header"
+            app:layout_constraintVertical_bias="0.0"
+            app:spanCount="2"
+            tools:layout_editor_absoluteX="-42dp"
+            tools:listitem="@layout/item_catalog_grid" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

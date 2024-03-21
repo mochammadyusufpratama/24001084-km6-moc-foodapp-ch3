@@ -2,4 +2,21 @@
     <string name="app_name">foodApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="food_of_the_day">Food of the Day</string>
+    <string name="greeting_text">What you gonna eat this day ?</string>
+    <string name="text_name">Hai, Mochammad Yusuf !</string>
+    <string name="disc_header">Spesial Harga Teman!</string>
+    <string name="disc_desc">Kapan lagi dapat harga semurah ini.</string>
+    <string name="menu_price_list">Rp50.000,00</string>
+    <string name="menu_name_list">Makanan</string>
+    <string name="category_name">Makanan</string>
+    <string name="menu_name_grid">Makanan</string>
+    <string name="menu_price_grid">Rp50.000,00</string>
+    <string name="nominal">1</string>
+    <string name="btn_add_to_cart_text">Tambah ke Keranjang - Rp20.000,00</string>
+    <string name="text_location">Terdapat banyak varian topping dan telah dibuat dengan sepenuh hati yang tentunya harus kalian rasakan</string>
+    <string name="location_header">Location</string>
+    <string name="menu_desc">Terdapat banyak varian topping dan telah dibuat dengan sepenuh hati yang tentunya harus kalian rasakan</string>
+    <string name="menu_price">Rp20.000,00</string>
+    <string name="menu_name">Ayam Geprek</string>
 </resources>
